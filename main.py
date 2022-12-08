@@ -19,7 +19,7 @@ while low < high:
     if data[mid] == target:
         sec_time = time.perf_counter() - start  # 時間計測終了
         print('値 {} は配列の {} 番目に見つかりました。'.format(target, mid))
-        print(f'{sec_time:.6f}')
+        print(f'処理時間は{sec_time:.6f}s')
         break
         # 値の大小を調べて探索範囲を狭める
     elif data[mid] > target:
